@@ -1,5 +1,6 @@
 import os
 import json
+import requests
 import pytz
 import base64
 import re
@@ -7,7 +8,7 @@ import pdfplumber
 import pandas as pd
 from datetime import datetime, timedelta # Thêm timedelta
 from datetime import datetime
-from flask import Flask, jsonify, render_template, session, redirect, url_for, send_file
+from flask import Flask, jsonify, render_template, request, session, redirect, url_for, send_file
 
 # --- CẤU HÌNH ---
 base_dir = os.path.abspath(os.path.dirname(__file__))
